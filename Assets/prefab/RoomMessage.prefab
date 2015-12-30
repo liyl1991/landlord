@@ -1,0 +1,239 @@
+{
+  "class": "qc.UIText",
+  "data": {
+    "uuid": "b7b038b5-9363-4643-9a3b-f82449bf4544",
+    "_prefab": [
+      7,
+      "fc5a5aeb-5afb-42fd-a57b-9bbadfa458d6"
+    ],
+    "name": [
+      7,
+      "message"
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      false
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.NodeMask",
+        "data": "618ffd94-9805-4929-8364-ba7462e87dc3"
+      },
+      {
+        "clazz": "qc.engine.RoomMessage",
+        "data": "cd6e1517-a2b7-4628-b293-cdecb701d152"
+      }
+    ],
+    "position": [
+      0,
+      0,
+      10,
+      35,
+      10,
+      35,
+      120,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1.0000000029311507
+    ],
+    "scaleY": [
+      3,
+      1.0000000029311507
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "fontFamily": [
+      3,
+      0
+    ],
+    "alignH": [
+      3,
+      0
+    ],
+    "alignV": [
+      3,
+      2
+    ],
+    "font": [
+      32,
+      "Arial",
+      null
+    ],
+    "bold": [
+      5,
+      false
+    ],
+    "fontSize": [
+      3,
+      15
+    ],
+    "color": [
+      14,
+      4294944000
+    ],
+    "text": [
+      7,
+      "欢迎加入本房间"
+    ],
+    "lineSpacing": [
+      3,
+      0
+    ],
+    "wrap": [
+      5,
+      false
+    ],
+    "enableGlow": [
+      5,
+      false
+    ],
+    "startColor": [
+      14,
+      4294901760
+    ],
+    "endColor": [
+      14,
+      4278190080
+    ],
+    "gradient": [
+      5,
+      false
+    ],
+    "stroke": [
+      14,
+      4278190080
+    ],
+    "strokeThickness": [
+      3,
+      0
+    ],
+    "glowColor": [
+      14,
+      4294901760
+    ],
+    "autoSize": [
+      5,
+      false
+    ],
+    "overflow": [
+      5,
+      true
+    ],
+    "shadowColor": [
+      14,
+      2147483648
+    ],
+    "shadowBlur": [
+      3,
+      10
+    ],
+    "shadowOffsetX": [
+      3,
+      3
+    ],
+    "shadowOffsetY": [
+      3,
+      3
+    ],
+    "enableShadow": [
+      5,
+      false
+    ]
+  },
+  "__json": {
+    "618ffd94-9805-4929-8364-ba7462e87dc3": {
+      "class": "qc.NodeMask",
+      "data": {
+        "uuid": [
+          7,
+          "618ffd94-9805-4929-8364-ba7462e87dc3"
+        ],
+        "enable": false,
+        "checkInField": [
+          5,
+          false
+        ],
+        "minAnchor": [
+          24,
+          "qc.Point",
+          [
+            0,
+            0
+          ]
+        ],
+        "maxAnchor": [
+          24,
+          "qc.Point",
+          [
+            1,
+            1
+          ]
+        ],
+        "minRotation": [
+          3,
+          0
+        ],
+        "maxRotation": [
+          3,
+          6.283185307179586
+        ],
+        "clipType": [
+          3,
+          1
+        ],
+        "mode": [
+          3,
+          0
+        ]
+      }
+    },
+    "cd6e1517-a2b7-4628-b293-cdecb701d152": {
+      "class": "qc.engine.RoomMessage",
+      "data": {
+        "uuid": [
+          7,
+          "cd6e1517-a2b7-4628-b293-cdecb701d152"
+        ],
+        "enable": true
+      }
+    }
+  },
+  "dependences": {}
+}

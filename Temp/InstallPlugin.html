@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        .btn_buy {
+            width:100px;
+            height:23px;
+            line-height:23px;
+            text-align:center;
+            color:#ffffff;
+            font-size:13px;
+            font-family:"宋体";
+            background:#fc7500;
+            display: block;
+            margin-top:0px;
+        }
+        .b-radius {
+            -moz-border-radius:5px;
+            -webkit-border-radius:5px;
+            border-radius:5px
+        }
+    </style>
+</head>
+<body onload="initInstallPlugin()">
+<a id="installPlugin" class="btn_buy b-radius"></a>
+<script type="text/javascript">
+    function initInstallPlugin() {
+        G = window.parent.parent.G;
+        G.initInstallPlugin(window);
+    }
+</script>
+</body>
+</html>

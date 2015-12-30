@@ -1,0 +1,8 @@
+{
+  "scene": {
+    "main": "Assets/state/main.bin",
+    "single": "Assets/state/single.bin",
+    "online": "Assets/state/online.bin"
+  },
+  "entryScene": "main"
+}

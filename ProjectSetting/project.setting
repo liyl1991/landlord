@@ -1,0 +1,16 @@
+{
+  "projectName": "landlord",
+  "gameName": "Against The Landlord",
+  "companyName": "QCplay",
+  "bundleIdentifier": "com.QCplay.demo.landlord",
+  "gameInstance": "qc_game",
+  "backgroundColor": 4671303,
+  "runInBackground": true,
+  "antialias": true,
+  "renderer": "Auto",
+  "transparent": false,
+  "developerMode": false,
+  "toolFlag": 28,
+  "version": "0.1",
+  "loading": ""
+}

@@ -1,0 +1,351 @@
+{
+  "class": "qc.UIImage",
+  "data": {
+    "uuid": "2ff91900-1f0c-46f6-8538-eef4ee58046f",
+    "_prefab": [
+      7,
+      "c721afbb-909f-46c1-8615-56cf611e50d0"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "clock"
+    ],
+    "ignoreDestroy": [
+      5,
+      null
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      14725190
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.ClockUI",
+        "data": "c9e68358-e81d-48e5-a9a7-10a54903c9a0"
+      }
+    ],
+    "position": [
+      0,
+      0,
+      744.1919341574849,
+      148.11072292392407,
+      744.1919341574849,
+      148.11072292392407,
+      55,
+      55,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1
+    ],
+    "scaleY": [
+      3,
+      1
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [
+      {
+        "class": "qc.UIText",
+        "data": {
+          "uuid": "fcc7d41b-d731-47e5-a80d-17f6c7b9afb4",
+          "_prefab": [
+            7,
+            ""
+          ],
+          "__lock": [
+            5,
+            null
+          ],
+          "name": [
+            7,
+            "time"
+          ],
+          "ignoreDestroy": [
+            5,
+            false
+          ],
+          "alpha": [
+            3,
+            1
+          ],
+          "visible": [
+            5,
+            true
+          ],
+          "colorTint": [
+            14,
+            16777215
+          ],
+          "static": [
+            5,
+            false
+          ],
+          "scripts": [
+            {
+              "clazz": "qc.NodeMask",
+              "data": "1d9ce76c-cf39-44a6-8dc3-e0b06200a2d8"
+            }
+          ],
+          "position": [
+            0.5,
+            0.5,
+            0,
+            0,
+            27.5,
+            27.5,
+            45,
+            45,
+            0,
+            0,
+            0,
+            0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "scaleX": [
+            3,
+            1
+          ],
+          "scaleY": [
+            3,
+            1
+          ],
+          "rotation": [
+            3,
+            0
+          ],
+          "interactive": [
+            5,
+            false
+          ],
+          "isFiltersThrough": [
+            5,
+            null
+          ],
+          "children": [],
+          "fontFamily": [
+            3,
+            0
+          ],
+          "alignH": [
+            3,
+            2
+          ],
+          "alignV": [
+            3,
+            2
+          ],
+          "font": [
+            32,
+            "Arial",
+            null
+          ],
+          "bold": [
+            5,
+            true
+          ],
+          "fontSize": [
+            3,
+            40
+          ],
+          "color": [
+            14,
+            4278190080
+          ],
+          "text": [
+            7,
+            "30"
+          ],
+          "lineSpacing": [
+            3,
+            0
+          ],
+          "wrap": [
+            5,
+            false
+          ],
+          "enableGlow": [
+            5,
+            false
+          ],
+          "startColor": [
+            14,
+            4294901760
+          ],
+          "endColor": [
+            14,
+            4278190080
+          ],
+          "gradient": [
+            5,
+            false
+          ],
+          "stroke": [
+            14,
+            4278190080
+          ],
+          "strokeThickness": [
+            3,
+            0
+          ],
+          "glowColor": [
+            14,
+            4294901760
+          ],
+          "autoSize": [
+            5,
+            false
+          ],
+          "overflow": [
+            5,
+            true
+          ],
+          "shadowColor": [
+            14,
+            2147483648
+          ],
+          "shadowBlur": [
+            3,
+            10
+          ],
+          "shadowOffsetX": [
+            3,
+            3
+          ],
+          "shadowOffsetY": [
+            3,
+            3
+          ],
+          "enableShadow": [
+            5,
+            false
+          ]
+        },
+        "__json": {
+          "1d9ce76c-cf39-44a6-8dc3-e0b06200a2d8": {
+            "class": "qc.NodeMask",
+            "data": {
+              "uuid": [
+                7,
+                "1d9ce76c-cf39-44a6-8dc3-e0b06200a2d8"
+              ],
+              "enable": false,
+              "checkInField": [
+                5,
+                false
+              ],
+              "minAnchor": [
+                24,
+                "qc.Point",
+                [
+                  0,
+                  0
+                ]
+              ],
+              "maxAnchor": [
+                24,
+                "qc.Point",
+                [
+                  1,
+                  1
+                ]
+              ],
+              "minRotation": [
+                3,
+                0
+              ],
+              "maxRotation": [
+                3,
+                6.283185307179586
+              ],
+              "clipType": [
+                3,
+                1
+              ],
+              "mode": [
+                3,
+                0
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "texture": [
+      10,
+      "__builtin_resource__",
+      "__builtin_resource__"
+    ],
+    "frame": [
+      7,
+      "slider.png"
+    ],
+    "imageType": [
+      3,
+      1
+    ]
+  },
+  "__json": {
+    "c9e68358-e81d-48e5-a9a7-10a54903c9a0": {
+      "class": "qc.engine.ClockUI",
+      "data": {
+        "uuid": [
+          7,
+          "c9e68358-e81d-48e5-a9a7-10a54903c9a0"
+        ],
+        "enable": true,
+        "timePanel": [
+          18,
+          "fcc7d41b-d731-47e5-a80d-17f6c7b9afb4"
+        ],
+        "totalTime": [
+          3,
+          30
+        ]
+      }
+    }
+  },
+  "dependences": {
+    "__builtin_resource__": {
+      "key": "__builtin_resource__",
+      "uuid": "__builtin_resource__"
+    }
+  }
+}

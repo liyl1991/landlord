@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no"/>
+    <title>隐藏的游戏场景</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/Assets/css/style.css"/>
+
+    <script src="../lib/phaser.js"></script>
+    <script src="../lib/webfontloader.js"></script>
+    <script src="../lib/qc-core-debug.js"></script>
+</head>
+<body>
+<script>
+    // 游戏的入口
+    var game = new qc.Game({
+        width : 300,
+        height : 300,
+        transparent: true,
+        forceSetTimeOut : true,
+        state : {
+            init: function() {
+                var g = window.parent.G;
+
+                var service = window.parent.G.service;
+                game.assets.baseURL = 'http://' + service.ip + ':' + service.port + '/';
+
+                // 派发加载成功的事件
+                g.e.emit(g.e.HIDDEN_SCENE_INITED, {
+                    game: game
+                });
+            },
+            create: function() {
+                // 修改默认帧率，隐藏的场景可以低点
+                game.time.frameRate = 20;
+            }
+        }
+    });
+</script>
+</body>
+</html>

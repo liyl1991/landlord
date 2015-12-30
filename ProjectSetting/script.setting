@@ -1,0 +1,7 @@
+{
+  "logicalScriptOrder": [
+    "Scripts/start.js",
+    "Scripts/logic/AICardType.js",
+    "Scripts/logic/AILogic.js"
+  ]
+}

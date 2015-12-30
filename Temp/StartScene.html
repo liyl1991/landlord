@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name='viewport' content='width=device-width,user-scalable=no'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-title' content='Against The Landlord'>
+    <link rel='apple-touch-icon' href='../../build/imgs/qici.png'>
+    <link rel='apple-touch-startup-image' href='../../build/imgs/qici.png'>
+
+    <link rel="shortcut icon" href="../../lib/imgs/qici.ico" />
+    <title>编辑器启动场景的脚本</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;             
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/Assets/css/style.css"/>
+
+    <script>
+
+        var qici = {};
+        qici.config = {
+            // 项目名，默认为：Game
+            projectName: 'landlord',
+        
+            // 游戏名字，默认为：未命名
+            gameName: 'Against The Landlord',
+        
+            // 开发者名字，默认为：DefaultCompany
+            companyName: 'QCplay',
+        
+            // 项目唯一标识，默认为：com.DefaultCompany.Game
+            bundleIdentifier: 'com.QCplay.demo.landlord',
+        
+            // 游戏示例，将作为全局变量访问，默认为：game
+            gameInstance: 'qc_game',
+
+            // 帧率
+            frameRate: {"mobile":30,"desktop":60},
+            
+            // 游戏背景色
+            backgroundColor: 4671303,
+        
+            // 后台运行
+            runInBackground: true,
+        
+            // 抗锯齿
+            antialias: true,
+
+            // 渲染方式
+            renderer: 'Auto',
+        
+            // 背景透明
+            transparent: false,
+        
+            // 游戏切屏时的进度界面
+            loadingPrefab: '',
+
+            // 开发模式
+            developerMode: true,
+        
+            // 所有的游戏场景
+            scene: {
+                editor : 'Temp/scene_editor.bin'
+                ,
+            "main" : "Assets/state/main.bin",
+            "single" : "Assets/state/single.bin",
+            "online" : "Assets/state/online.bin"
+            },
+            
+            // 入口场景
+            entryScene : 'editor',
+            loading: {
+                loadingText: 'Loading, please wait...',
+                loadingInterval: 200,
+                brightingInterval: 10,
+                blinkingCount: 5,
+                blinkingInterval: 70,
+                fadingInInterval: 50,
+                fadingOutInterval: 100
+            }
+        };
+
+        qici.config.developerMode = true;
+        qici.config.editor = true;
+        qici.config.runInBackground = true;
+        qici.config.frameRate = {
+            "mobile": 30,
+            "desktop": 30
+        };
+
+   		_pluginVariables_={}
+
+        qici.scripts = [
+            './Assets/meta/globalUrlMap.js?20151231211320_18',
+            '../lib/phaser.js',
+            '../lib/webfontloader.js',
+            '../lib/qc-core-debug.js',
+            // External scripts for plugins
+
+            // Plugins scripts    
+
+            // User scripts    
+			'../Scripts/start.js?20151231203804',
+			'../Scripts/logic/AICardType.js?20151231203804',
+			'../Scripts/logic/AILogic.js?20151231203804',
+			'../Scripts/logic/GameRule.js?20151231203804',
+			'../Scripts/logic/Player.js?20151231203804',
+			'../Scripts/logic/Utils.js?20151231203804',
+			'../Scripts/socket/Online.js?20151231203804',
+			'../Scripts/socket/socket.io.js?20151231203804',
+			'../Scripts/ui/PlayUI.js?20151231203805',
+			'../Scripts/ui/CardlistUI.js?20151231203805',
+			'../Scripts/logic/clone/Card.js?20151231203805',
+			'../Scripts/ui/LandlordUI.js?20151231203805',
+			'../Scripts/ui/MainUI.js?20151231203805',
+			'../Scripts/ui/online/ClockUI.js?20151231203805',
+			'../Scripts/ui/online/OlLandlordUI.js?20151231203805',
+			'../Scripts/ui/online/OnlinePlayUI.js?20151231203805',
+			'../Scripts/ui/online/OPlayerUI.js?20151231203805',
+			'../Scripts/ui/online/RoomMessage.js?20151231203805',
+			'../Scripts/ui/PlayerUI.js?20151231203805',
+			'../Scripts/ui/CardUI.js?20151231203805',
+
+        ];
+        
+		// Asset count that need preload in boot
+		qici.loadingAssetCount = 2;
+    </script>
+</head>
+
+<body onload="qici.init();">
+    <div style="overflow:hidden;padding:0;margin:0;width:100%;height:100%;">
+        <div id="gameDiv" style="position:absolute;width:100%;height:100%"></div>
+    </div>
+    <script src='../../lib/qc-loading-debug.js'></script>
+    <script src='../../lib/qc-loading-editor.js'></script>
+</body>
+
+</html>
