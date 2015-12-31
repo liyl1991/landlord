@@ -1,7 +1,8 @@
-// define a user behaviour
+/**
+ * 主场景脚本
+ * @method defineBehaviour
+ */
 var MainUI = qc.defineBehaviour('qc.engine.MainUI', qc.Behaviour, function() {
-    // need this behaviour be scheduled in editor
-    //this.runInEditor = true;
     this.singleBtn = null;
 	this.multiBtn = null;
 	this.singleScene = null;
@@ -142,7 +143,3 @@ MainUI.prototype.showMessage = function(m) {
 
 MainUI.prototype.MSG_WAITING = '请稍等';
 MainUI.prototype.MSG_EXIST_NAME = '您输入的昵称已被使用，请重试';
-// Called every frame, if the behaviour is enabled.
-//MainUI.prototype.update = function() {
-//
-//};
