@@ -138,6 +138,7 @@ AILogic.prototype.follow = function(winc, isWinnerIsLandlord, winnerCardCount) {
                                     for (var j = 0; j < sizeDiff; j++) {//拆顺
                                         if(valDiff > 1){
                                             self._progression[i].cardList.shift();
+                                            self._progression[i].val--;
                                             valDiff -- ;
                                             continue;
                                         }
