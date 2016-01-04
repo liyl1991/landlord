@@ -2,7 +2,6 @@
  * 卡牌规则
  */
 var CardUI = qc.defineBehaviour('qc.engine.CardUI', qc.Behaviour, function() {
-    // need this behaviour be scheduled in editor
     this.isSelected = false;
     this.info = null;
 }, {
@@ -23,10 +22,6 @@ CardUI.prototype.show = function (info, isSelect){
         o.visible = true;
         self.info = info;
     }
-    //if(isSelect){
-        //o.anchoredY = -28;
-        //self.isSelected = true;
-    //}
 };
 
 /**
@@ -47,13 +42,3 @@ CardUI.prototype.onClick = function (){
         ui.playBtn.state = qc.UIState.DISABLED;
     }
 };
-
-// Called when the script instance is being loaded.
-//CardUI.prototype.awake = function() {
-//
-//};
-
-// Called every frame, if the behaviour is enabled.
-//CardUI.prototype.update = function() {
-//
-//};

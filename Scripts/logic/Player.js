@@ -11,8 +11,7 @@ var Player = qc.landlord.Player = function (n){
     self.cardList = [];
     //下一家
     self.nextPlayer = null;
-    //上一家
-    //self.prePlayer = null;
+    //以下属性用于多人对战
     self.uid = null;
     self.deskNo = null;
     self.seatNo = null;
