@@ -117,6 +117,8 @@ AILogic.prototype.follow = function(winc, isWinnerIsLandlord, winnerCardCount) {
                     } else {
                         return null;
                     }
+                    three.cardKind = G.gameRule.THREE_WITH_PAIRS;
+                    three.size = 5;
                 }
                 return three;
 
